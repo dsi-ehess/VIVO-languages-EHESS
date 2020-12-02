@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -20,19 +21,17 @@
     </licenses>
 
     <developers>
-  		<developer>
-  			<name>Fabien Berthomé</name>
-  			<email>berthome.fabien@gmail.com</email>
-  			<organization>EHESS</organization>
-  			<organizationUrl>http://ehess.fr/</organizationUrl>
-  		</developer>
-  	</developers>
+        <developer>
+            <name>Fabien Berthomé</name>
+            <email>berthome.fabien@gmail.com</email>
+            <organization>EHESS</organization>
+            <organizationUrl>http://ehess.fr/</organizationUrl>
+        </developer>
+    </developers>
 
-    <!--
-       The SCM repository location is used by Continuum to update against
-       when changes have occurred.  This spawns a new build cycle and releases
-       snapshots into the snapshot repository below.
-    -->
+    <!-- The SCM repository location is used by Continuum to update against 
+        when changes have occurred. This spawns a new build cycle and releases snapshots 
+        into the snapshot repository below. -->
     <scm>
         <connection>scm:git:git@github.com:dsi-ehess/VIVO-languages-EHESS.git</connection>
         <developerConnection>scm:git:git@github.com:dsi-ehess/VIVO-languages-EHESS.git</developerConnection>
@@ -66,22 +65,11 @@
             </activation>
             <build>
                 <plugins>
-                    <!-- plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>attach-javadocs</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <quiet>true</quiet>
-                            <additionalparam>${javadoc.opts}</additionalparam>
-                        </configuration>
-                    </plugin -->
+                    <!-- plugin> <groupId>org.apache.maven.plugins</groupId> 
+                        <artifactId>maven-javadoc-plugin</artifactId> <executions> <execution> <id>attach-javadocs</id> 
+                        <goals> <goal>jar</goal> </goals> </execution> </executions> <configuration> 
+                        <quiet>true</quiet> <additionalparam>${javadoc.opts}</additionalparam> </configuration> 
+                        </plugin -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
@@ -180,7 +168,7 @@
                     <version>3.1.0</version>
                 </plugin>
                 <plugin>
-					<groupId>org.apache.maven.plugins</groupId>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>3.2.3</version>
                 </plugin>
