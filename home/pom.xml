@@ -14,7 +14,7 @@
         <relativePath>..</relativePath>
     </parent>
 
-    <name>VIVO Languages for Home EHESS</name>
+    <name>VIVO Languages for Home EHESS fr_FR</name>
 
     <build>
         <plugins>
