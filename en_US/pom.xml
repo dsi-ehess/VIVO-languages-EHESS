@@ -3,15 +3,18 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>fr.ehess</groupId>
-    <artifactId>vivo-languages-EHESS</artifactId>
-    <version>1.11.2-SNAPSHOT</version>
+    <artifactId>vivo-languages-EHESS_en_US</artifactId>
     <packaging>pom</packaging>
 
-    <name>VIVO Languages EHESS</name>
-    <description>VIVO Languages for EHESS</description>
+    <name>VIVO Languages EHESS for en_US</name>
+    <description>VIVO Languages for French</description>
     <url>http://vivoweb.org/</url>
-
+    <parent>
+        <groupId>fr.ehess</groupId>
+        <artifactId>vivo-languages-EHESS</artifactId>
+        <version>1.11.2-SNAPSHOT</version>
+        <relativePath>..</relativePath>
+    </parent>
     <licenses>
         <license>
             <name>BSD 3-Clause License</name>
@@ -22,10 +25,28 @@
 
     <developers>
         <developer>
-            <name>Fabien Berthomé</name>
-            <email>berthome.fabien@gmail.com</email>
-            <organization>EHESS</organization>
-            <organizationUrl>http://ehess.fr/</organizationUrl>
+            <name>Graham Triggs</name>
+            <email>gtriggs@duraspace.org</email>
+            <organization>DuraSpace</organization>
+            <organizationUrl>http://vivoweb.org/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Jim Blake</name>
+            <email>jeb228@cornell.edu</email>
+            <organization>Cornell University Library</organization>
+            <organizationUrl>https://github.com/j2blake</organizationUrl>
+        </developer>
+        <developer>
+            <name>John Fereira</name>
+            <email>jaf30@cornell.edu</email>
+            <organization>Cornell University</organization>
+            <organizationUrl>https://github.com/fereira</organizationUrl>
+        </developer>
+        <developer>
+            <name>Michel Héon</name>
+            <email>heon.michel@uqam.ca</email>
+            <organization>Université du Québec à Montréal</organization>
+            <organizationUrl>https://github.com/uqam-sb</organizationUrl>
         </developer>
     </developers>
 
@@ -33,9 +54,9 @@
         when changes have occurred. This spawns a new build cycle and releases snapshots 
         into the snapshot repository below. -->
     <scm>
-        <connection>scm:git:git@github.com:dsi-ehess/VIVO-languages-EHESS.git</connection>
-        <developerConnection>scm:git:git@github.com:dsi-ehess/VIVO-languages-EHESS.git</developerConnection>
-        <url>git@github.com:dsi-ehess/VIVO-languages-EHESS.git</url>
+        <connection>scm:git:git@github.com:vivo-project/VIVO-languages.git</connection>
+        <developerConnection>scm:git:git@github.com:vivo-project/VIVO-languages.git</developerConnection>
+        <url>git@github.com:vivo-project/VIVO-languages.git</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -198,7 +219,7 @@
         </snapshotRepository>
     </distributionManagement>
     <modules>
-        <module>fr_FR</module>
-        <module>en_US</module>
+        <module>webapp</module>
+        <module>home</module>
     </modules>
 </project>
