@@ -5,7 +5,7 @@
 
     <artifactId>vivo-languages-EHESS-webapp-en_US</artifactId>
     <packaging>war</packaging>
-    <name>VIVO Languages EHESS-for Web App en_US</name>
+    <name>VIVO Languages EHESS for Web App en_US</name>
 
     <parent>
         <groupId>fr.ehess</groupId>
